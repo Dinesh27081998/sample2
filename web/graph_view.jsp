@@ -27,7 +27,7 @@
 
 	<div id="menubar">
       <ul id="menu">
-        <li class="REG"><a href="Home.html">Home</a></li>
+        <li class="REG"><a href="index.html">Home</a></li>
         <li><a href="File.jsp">CipherGeneration</a></li>
         <!-- <li><a href="UserLogin.html">Login</a></li>
         <li><a href="graph_filter_perf.jsp">Algorithm Description </a></li>

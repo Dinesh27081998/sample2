@@ -36,7 +36,7 @@ function popitup(url) {
 
 	<div id="menubar">
       <ul id="menu">
-        <li ><a href="Home.html">Home</a></li>
+        <li ><a href="index.html">Home</a></li>
         <li><a href="File.jsp">CipherGeneration</a></li>
         <!-- <li><a href="Ad.html">Algorithm Description</a></li>
         <li><a href="P.html">Security </a></li>
