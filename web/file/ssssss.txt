@@ -1,0 +1,85 @@
+ <table width="100%">
+        <tr bgColor=#e4f3f9 ><td width="100%" colspan="5"><b>Sales Report</b></td></tr>
+        <tr><td>Customer Name</td><td>Product Name</td><td>Price</td><td>Quantity</td><td>Total</td></tr>
+    <%
+
+    ResultSet rs=null;
+    try{
+
+        Class.forName("com.mysql.jdbc.Driver");
+        Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql","root","root");
+
+          Statement st=con.createStatement();
+        rs=st.executeQuery("select uname,pname,price,qty,total from shoppingcart.salesreport s,shoppingcart.users u where s.uid=u.uid");
+        while(rs.next()){
+       %>
+        
+         <tr>   <td><%=rs.getString(1)%></td> <td><%=rs.getString(2)%></td><td><%=rs.getString(3)%></td>
+         <td><%=rs.getString(4)%></td> <td><%=rs.getString(5)%></td>
+         </tr>
+       
+
+
+
+   <%}%>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="100%">
+        <tr bgColor=#e4f3f9 ><td width="100%" colspan="5"><b>Sales Report</b></td></tr>
+        <tr><td>Customer Name</td><td>Product Name</td><td>Price</td><td>Quantity</td><td>Total</td></tr>
+    <%
+
+
+    ResultSet rs1=null;
+
+        Class.forName("com.mysql.jdbc.Driver");
+        Connection con1=DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql","root","root");
+
+          Statement st1=con.createStatement();
+        rs1=st1.executeQuery("select uname,pname,price,qty,total from shoppingcart.salesreport s,shoppingcart.users u where s.uid=u.uid");
+        while(rs.next()){
+       %>
+        
+         <tr>   <td><%=rs.getString(1)%></td> <td><%=rs.getString(2)%></td><td><%=rs.getString(3)%></td>
+         <td><%=rs.getString(4)%></td> <td><%=rs.getString(5)%></td>
+         </tr>
+       
+
+
+
+   <%}%>
+
+
+
+
+
+
+
+   <% }catch(Exception e){
+            e.printStackTrace();
+            }
+        %>
+       
+    
